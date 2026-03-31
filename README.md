@@ -131,6 +131,23 @@ eif
 
 ```
 
+### Importing
+
+To import other libraries, such as the common tllib, use the keyword `imp` along with whatever path you are importing from.
+
+```testlang
+imp tllib/math.tl
+
+var returnValue
+= returnValue
+math.mult 4 3
+
+bif
+eq returnValue 12
+> println Math isn't broken.
+eif
+```
+
 ## Inbuilt Functions
 
 TestLang has a few inbuilt functions. These provide the building blocks for complex operations.
